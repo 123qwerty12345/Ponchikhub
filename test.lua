@@ -4,7 +4,7 @@ local Window = Rayfield:CreateWindow({
    LoadingSubtitle = "by test",
    ConfigurationSaving = {
       Enabled = true,
-      FolderName = Hub, -- Create a custom folder for your hub/game
+      FolderName = nil, -- Create a custom folder for your hub/game
       FileName = "Ponchik hub"
    },
    Discord = {
