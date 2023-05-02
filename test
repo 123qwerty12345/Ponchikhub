@@ -8,5 +8,7 @@ local Window = Rayfield:CreateWindow({
       FolderName = nil, -- Create a custom folder for your hub/game
       FileName = "Pomchik Hub"
 
+getgenv().SecureMode = true
+
 local Tab = Window:CreateTab("test", 4483362458) -- Title, Image
 local Section = Tab:CreateSection("Section Example")
