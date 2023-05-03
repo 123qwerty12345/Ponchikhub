@@ -36,3 +36,17 @@ local Button = Tab:CreateButton({
    loadstring(game:HttpGet(("https://raw.githubusercontent.com/prosko1234/Fly/main/script.lua"),true))()
    end,
 })
+
+local Toggle = Tab:CreateToggle({
+   Name = "Infinity Jump",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(50)
+        local InfiniteJumpEnabled = true
+        game:GetService("UserInputService").JumpRequest:connect(function()
+            if InfiniteJumpEnabled then
+                game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+            end
+        end)
+   end,
+})
