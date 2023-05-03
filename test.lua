@@ -31,7 +31,7 @@ local Section = Tab:CreateSection("Section Example")
 Section:Set("Section Example")
 
 local Button = Tab:CreateButton({
-   Name = "Button Example",
+   Name = "Fly(e)",
    Callback = function()
    loadstring(game:HttpGet(("https://raw.githubusercontent.com/prosko1234/Fly/main/script.lua"),true))()
    end,
