@@ -33,6 +33,6 @@ Section:Set("Section Example")
 local Button = Tab:CreateButton({
    Name = "Button Example",
    Callback = function()
-   -- The function that takes place when the button is pressed
+   loadstring(game:HttpGet(("https://raw.githubusercontent.com/prosko1234/Fly/main/script.lua"),true))()
    end,
 })
